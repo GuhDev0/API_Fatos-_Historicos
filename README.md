@@ -1,43 +1,37 @@
-<h1 align="left">API_FATOS HISTORICOS</h1>
+# API Fatos Históricos
 
-###
+Essa é uma API feita com Node.js e Express que retorna fatos históricos com base no ano informado (entre 1920 e 2020).
 
-<h2 align="left">#O QUE FAZ</h2>
+---
 
-###
+## Objetivo
 
-<p align="left">API consiste em relembrar momentos Historicos de cada ano,<br>essa API si basea em  momentos de 1920 a 2020</p>
+O projeto foi criado como parte dos meus estudos em desenvolvimento back-end, com foco em prática de rotas, leitura de dados e estruturação de uma API simples.
 
-###
+---
 
-<h2 align="left">#TECNOLOGIA USADA</h2>
+## Tecnologias utilizadas
 
-###
+- Node.js  
+- Express  
+- Nodemon (ambiente de desenvolvimento)
+---
+## Instalação
 
-<h4 align="left">#BACK END</h4>
+1. Clone o repositório:  https://github.com/GuhDev0/API_Fatos-_Historicos.git
+2.Instale as dependências: npm install
+3.Inicie o servidor: npm run dev
 
-###
+## Como usar
 
-<p align="left">- NODE.JS<br>- EXPRESS</p>
-
-###
-
-<h4 align="left">#FRONT END</h4>
-
-###
-
-<p align="left">- POSTAMAN  - Uso do postman para passar os parametros</p>
-
-###
-
-<h3 align="left">#COMO USA</h3>
-
-###
-
-<p align="left">- Passe os parametros usando o postman com o metodo { GET }<br>- Passe na URL, EXEMPLO : http://localhost:8088?ano=1920<br>- apartir ? { key (nome do parametro ) = { valor do parametro } }<br>- Depois  Abra Seu terminal e Digite "node servidor.js  " assim o servidor  sera iniciado na porta " localhost:8088 "<br>- Depois é so voltar no postman e Aperta o botão SEND</p>
-
-###
-
-<p align="left">Link do postman para download : https://www.postman.com/downloads/</p>
-
-###
+Você pode acessar a rota principal da API com o método GET:http://localhost:3000/ANO
+Exemplo:http://localhost:3000/1994
+### Resposta:
+json
+{
+  "ano": 1994,
+  "fato": "O Real é criado como nova moeda brasileira."
+}
+## testar no postman
+Se quiser testar, abra o Postman, selecione o método GET e informe a URL com o ano desejado. Exemplo:
+http://localhost:3000/2000
